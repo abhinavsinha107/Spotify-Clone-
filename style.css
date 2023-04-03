@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    background-color: rgb(230 231 248);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 45px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+.brand img {
+    width: 30px;
+    padding: 0 5px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container {
+    height: 71vh;
+    background-color: blue;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: x-small;
+    display: flex;
+    width: 75%;
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 10px;
+    background: url('bg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: fixed;
+    overflow: hidden;
+}
+
+.bottom {
+    background-color: black;
+    color: white;
+    position: sticky;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    bottom: 0;
+    margin: 0px 50px
+}
+
+.icons {
+    margin-top: 8px;
+}
+
+.icons i {
+    cursor: pointer;
+    padding: 0 3px;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItemContainer {
+    margin: 24px 0 24px 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    text-align:justify;
+    height: 85%;
+}
+
+.songItemContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.songItem {
+    width: 30vw;
+    background-color: rgb(30 215 96);
+    color: black;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    margin-right: 15px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    padding: 0 10px;
+}
+
+.songItem img {
+    width: 30px;
+    border-radius: 20px;
+}
+
+.timestamp i {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 80px;
+    top: 40px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
